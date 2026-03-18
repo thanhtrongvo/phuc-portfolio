@@ -9,45 +9,47 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
-    title: "nike / brand campaign",
-    category: "Photo/Video",
-    thumbnail:
-      "https://images.unsplash.com/photo-1556906781-9a412961c28c?w=800&q=80",
+    title: "nike / motion campaign",
+    category: "FPT Telecom",
+    thumbnail: "/thumbnail/thumbnail1.webp",
+    videoUrl: "https://www.youtube.com/embed/fnGmDuY6heI",
   },
   {
     id: 2,
-    title: "editorial / monochrome",
-    category: "Photo/Video",
+    title: "editorial / fashion film",
+    category: "Nexa InfoTech",
     thumbnail:
       "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?w=800&q=80",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
   },
   {
     id: 3,
-    title: "salomon / brand campaign",
-    category: "Photo/Video",
+    title: "salomon / trail run recap",
+    category: "Nexa InfoTech",
     thumbnail:
       "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80",
+    videoUrl: "https://www.tiktok.com/embed/v2/7130283733026360622",
   },
   {
     id: 4,
-    title: "ferrari / automotive",
-    category: "Photo/Video",
+    title: "ferrari / track day edit",
+    category: "Nexa InfoTech",
     thumbnail:
       "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&q=80",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
   },
   {
     id: 5,
-    title: "adidas / streetwear",
-    category: "Photo/Video",
+    title: "adidas / streetwear promo",
+    category: "Nexa InfoTech",
     thumbnail:
       "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&q=80",
+    videoUrl: "https://www.tiktok.com/embed/v2/7130283733026360622",
   },
   {
     id: 6,
-    title: "lexus / luxury launch",
-    category: "Photo/Video",
+    title: "lexus / hyper-lapse",
+    category: "Nexa InfoTech",
     thumbnail:
       "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
@@ -58,21 +60,19 @@ export const skills = {
   tools: [
     "Adobe Premiere Pro",
     "Adobe After Effects",
-    "Adobe Photoshop",
     "DaVinci Resolve",
-    "Adobe Lightroom",
-    "Adobe InDesign",
-    "Figma",
-    "Notion",
+    "Final Cut Pro",
+    "CapCut Pro",
+    "Cinema 4D",
+    "Blender",
   ],
   services: [
-    "Cinematography / Directing",
-    "Creative Direction & Shot Planning",
-    "Video Editing & Motion Design",
+    "Video Editing & Storytelling",
+    "Motion Graphics & Animation",
     "Color Grading & Lookbuilding",
-    "Photography & Retouching",
-    "Sound Design & Audio Polish",
-    "Design & Layout for Print/Digital",
+    "Sound Design & Audio Mixing",
+    "Social Media Content & Reels",
+    "Visual Effects (VFX)",
   ],
 };
 
@@ -81,7 +81,7 @@ export const faqItems = [
     id: "01",
     question: "What types of projects do you specialize in?",
     answer:
-      "I focus primarily on creative direction, cinematic video production, photography, and short-form content. My work ranges from high-end brand campaigns to editorial photography and social reels.",
+      "I focus primarily on cinematic video production, motion graphics, and short-form content. My work ranges from high-end brand campaigns to social reels and YouTube videos.",
   },
   {
     id: "02",

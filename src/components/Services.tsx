@@ -69,7 +69,7 @@ export default function Services() {
             <h2 className="font-sans text-4xl font-semibold leading-tight tracking-tight md:text-5xl">
               Services that
               <br />
-              <span className="text-foreground/30">shape your story.</span>
+              <span className="text-foreground/30">bring motion to life.</span>
             </h2>
           </motion.div>
           <motion.div
