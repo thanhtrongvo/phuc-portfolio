@@ -43,8 +43,6 @@ function RevealText({
 export default function About() {
   const sectionRef = useRef<HTMLElement>(null);
   const photoRef = useRef(null);
-  const quoteRef = useRef(null);
-  const quoteInView = useInView(quoteRef, { once: false, margin: "-60px" });
 
   // Parallax for the photo
   const { scrollYProgress } = useScroll({
@@ -172,36 +170,6 @@ export default function About() {
                 delay={0.3}
               />
             </p>
-
-            {/* Philosophy card — typewriter-style reveal */}
-            <motion.div
-              ref={quoteRef}
-              initial={{ opacity: 0, y: 30, scale: 0.96 }}
-              animate={quoteInView ? { opacity: 1, y: 0, scale: 1 } : {}}
-              transition={{
-                duration: 0.7,
-                delay: 0.2,
-                type: "spring",
-                stiffness: 100,
-              }}
-              className="mt-4 overflow-hidden rounded-2xl border border-border bg-card p-8"
-            >
-              {/* Decorative quote mark */}
-              <motion.span
-                initial={{ opacity: 0, scale: 0 }}
-                animate={quoteInView ? { opacity: 0.1, scale: 1 } : {}}
-                transition={{ delay: 0.5, duration: 0.5 }}
-                className="absolute -top-2 left-4 font-serif text-8xl text-foreground leading-none select-none"
-              >
-                &ldquo;
-              </motion.span>
-              <p className="relative font-serif text-xl leading-relaxed text-foreground italic md:text-2xl">
-                <RevealText
-                  text="Details matter because they carry the vision. Every cut, every beat, and every sound choice has to serve the story. If it doesn't match the rhythm of the script, it doesn't stay."
-                  delay={0.4}
-                />
-              </p>
-            </motion.div>
           </div>
         </div>
       </div>
