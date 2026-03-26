@@ -1,39 +1,39 @@
 "use client";
 
-import { useRef, ReactElement } from "react";
+import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { skills } from "@/lib/data";
 
-/* ── Tool Icons - Accurate SVG paths ─────────────────── */
-const ToolIcon = ({ icon }: { icon: string }) => {
-  const icons: Record<string, ReactElement> = {
-    // CapCut - Official logo (play button in circle)
-    capcut: (
-      <svg viewBox="0 0 24 24" className="h-8 w-8" fill="currentColor">
-        <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8zm-2-12v8l6-4-6-4z" />
-      </svg>
-    ),
-    // Canva - Official "C" logo
-    canva: (
-      <svg viewBox="0 0 24 24" className="h-8 w-8" fill="currentColor">
-        <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8c1.851 0 3.558.633 4.92 1.693l-1.428 1.428A5.956 5.956 0 0012 6c-3.309 0-6 2.691-6 6s2.691 6 6 6c2.073 0 3.902-1.056 4.976-2.656l1.428 1.428C16.558 18.367 14.851 20 12 20z" />
-      </svg>
-    ),
-    // Adobe Premiere Pro - "Pr" text logo
-    premiere: (
-      <svg viewBox="0 0 24 24" className="h-8 w-8" fill="currentColor">
-        <path d="M3 3h18v18H3V3zm16.5 16.5v-15h-15v15h15zM6.5 8h2.8c1.3 0 2.2.9 2.2 2.1 0 1.3-.9 2.2-2.2 2.2H8v2.7H6.5V8zm1.5 3h1.1c.5 0 .9-.4.9-.9 0-.5-.4-.9-.9-.9H8v1.8zm5.5-3h2.3c.4 0 .7.1 1 .2.2.1.4.3.5.5.1.2.2.4.2.7v.1c0 .4-.1.7-.4 1-.2.2-.5.4-.9.5l1.5 2.5h-1.7l-1.3-2.2h-.7v2.2h-1.5V8h2zm1.5 2.4h.6c.3 0 .5-.1.7-.2.1-.1.2-.3.2-.5 0-.2-.1-.4-.2-.5-.2-.1-.4-.2-.7-.2h-.6v1.4z" />
-      </svg>
-    ),
-    // Adobe After Effects - "Ae" text logo
-    aftereffects: (
-      <svg viewBox="0 0 24 24" className="h-8 w-8" fill="currentColor">
-        <path d="M3 3h18v18H3V3zm16.5 16.5v-15h-15v15h15zM6 15l2.5-7h1.7l2.5 7h-1.6l-.5-1.5H8l-.5 1.5H6zm2.4-2.7h1.5l-.7-2.3-.8 2.3zm5.1-3.3h3.8v1.2h-2.3v1.2h2.1v1.2h-2.1v1.3h2.4V15h-3.9V9z" />
-      </svg>
-    ),
-  };
+// Import icons from react-icons
+import { 
+  TbBrandAdobePremier, 
+  TbBrandAdobeAfterEffect 
+} from "react-icons/tb";
+import { SiCanva } from "react-icons/si";
 
-  return icons[icon] || null;
+/* ── Custom CapCut Icon (not available in react-icons) ─────── */
+const CapCutIcon = ({ className }: { className?: string }) => (
+  <svg viewBox="0 0 24 24" className={className} fill="currentColor">
+    <path d="M12.004 0c-1.327.004-2.598.207-3.78.569l5.62 3.246c2.938 1.697 4.077 5.461 2.542 8.404-.053.102-.108.203-.167.302l5.608 3.238a11.367 11.367 0 0 0 2.17-6.617V9.14c0-2.502-.81-4.822-2.182-6.703a.512.512 0 0 0-.7-.133l-2.627 1.518A11.342 11.342 0 0 0 12.004 0zm-8.17 3.427a.512.512 0 0 0-.255.07A11.334 11.334 0 0 0 .687 9.14v.002c0 2.502.81 4.822 2.182 6.703.174.239.515.29.7.133l2.627-1.518a11.34 11.34 0 0 0 6.484 3.824l-5.62-3.246c-2.938-1.697-4.077-5.461-2.542-8.404.053-.102.108-.203.167-.302L-.923 3.094a.512.512 0 0 0-.243-.067zM12 6.857a5.143 5.143 0 1 0 0 10.286 5.143 5.143 0 0 0 0-10.286zm-.004 13.426a11.34 11.34 0 0 0-6.478-3.822l5.616 3.244c.923.533 1.945.823 2.972.867l.003.001c1.027.044 2.068-.156 3.035-.593l.006-.003c.3-.135.59-.295.866-.478l-2.628-1.517a5.655 5.655 0 0 1-3.392 2.301z"/>
+  </svg>
+);
+
+/* ── Tool Icon Component ─────────────────────────────────────── */
+const ToolIcon = ({ icon }: { icon: string }) => {
+  const iconClass = "h-8 w-8";
+  
+  switch (icon) {
+    case "capcut":
+      return <CapCutIcon className={iconClass} />;
+    case "canva":
+      return <SiCanva className={iconClass} />;
+    case "premiere":
+      return <TbBrandAdobePremier className={iconClass} />;
+    case "aftereffects":
+      return <TbBrandAdobeAfterEffect className={iconClass} />;
+    default:
+      return null;
+  }
 };
 
 /* ── Staggered container variants ─────────────────── */
