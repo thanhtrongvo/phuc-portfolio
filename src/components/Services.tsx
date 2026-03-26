@@ -7,27 +7,19 @@ import { skills } from "@/lib/data";
 // Import icons from react-icons
 import { 
   TbBrandAdobePremier, 
-  TbBrandAdobeAfterEffect 
+  TbBrandAdobeAfterEffect,
+  TbVideo
 } from "react-icons/tb";
 import { SiCanva } from "react-icons/si";
 
-/* ── Custom CapCut Icon (scissors/cut style - recognizable app icon) ─────── */
-const CapCutIcon = ({ className }: { className?: string }) => (
-  <svg viewBox="0 0 24 24" className={className} fill="currentColor">
-    <path d="M9.64 14.36a3.5 3.5 0 1 1-4.95-4.95 3.5 3.5 0 0 1 4.95 4.95zm4.72-4.72a3.5 3.5 0 1 1 4.95 4.95 3.5 3.5 0 0 1-4.95-4.95zM12 12l-6.36 6.36M12 12l6.36-6.36" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
-    <circle cx="7" cy="17" r="3" fill="none" stroke="currentColor" strokeWidth="2"/>
-    <circle cx="17" cy="7" r="3" fill="none" stroke="currentColor" strokeWidth="2"/>
-    <line x1="7" y1="17" x2="17" y2="7" stroke="currentColor" strokeWidth="2"/>
-  </svg>
-);
-
-/* ── Tool Icon Component ─────────────────────────────────────── */
+/* ── Staggered container variants ─────────────────── */
 const ToolIcon = ({ icon }: { icon: string }) => {
   const iconClass = "h-8 w-8";
   
   switch (icon) {
     case "capcut":
-      return <CapCutIcon className={iconClass} />;
+      // Using TbVideo as CapCut alternative (video editing icon)
+      return <TbVideo className={iconClass} />;
     case "canva":
       return <SiCanva className={iconClass} />;
     case "premiere":
