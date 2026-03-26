@@ -71,6 +71,8 @@ export default function Footer() {
             <p className="text-sm text-white/40">Email</p>
             <a
               href="mailto:trongphucwork123@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-1 text-lg font-medium text-white transition-colors hover:text-white/70"
             >
               trongphucwork123@gmail.com

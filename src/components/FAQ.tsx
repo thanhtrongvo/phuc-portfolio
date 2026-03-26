@@ -107,6 +107,8 @@ export default function FAQ() {
           </p>
           <a
             href="mailto:trongphucwork123@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-3 inline-flex items-center gap-2 text-base font-semibold text-foreground transition-colors hover:text-foreground/70"
           >
             Send me an email!
