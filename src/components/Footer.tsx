@@ -44,7 +44,7 @@ export default function Footer() {
           className="mb-16"
         >
           <h2 className="font-sans text-5xl font-semibold leading-[1.1] tracking-tight text-white md:text-7xl lg:text-8xl">
-            Let’s create, visualize, build, design
+            Let’s create
             <br />
             incredible work together.
           </h2>
