@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "SMITHDINH — Content Creator, Designer & Video Editor",
+  title: "SmithDinh",
   description:
     "A research-first approach to visual storytelling — video editing and documentary-style projects by Smith. A visual journalist based in Vietnam.",
   keywords: [
