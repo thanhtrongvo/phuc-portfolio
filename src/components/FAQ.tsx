@@ -64,8 +64,8 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="relative px-6 py-24 md:px-12 lg:px-24">
-      <div className="mx-auto max-w-4xl">
+    <section id="faq" className="relative px-8 py-24 md:px-16 lg:px-32">
+      <div className="mx-auto max-w-3xl">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

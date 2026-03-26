@@ -24,8 +24,8 @@ export default function PortfolioGrid() {
   };
 
   return (
-    <section id="work" className="relative px-6 py-24 md:px-12 lg:px-24">
-      <div className="mx-auto max-w-7xl">
+    <section id="work" className="relative px-8 py-24 md:px-16 lg:px-32">
+      <div className="mx-auto max-w-5xl">
         {/* Section Header — staggered word reveal */}
         <div ref={headerRef} className="mb-16 overflow-hidden">
           <motion.h2

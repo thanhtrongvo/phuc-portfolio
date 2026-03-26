@@ -65,9 +65,9 @@ export default function About() {
     <section
       ref={sectionRef}
       id="about"
-      className="relative px-6 py-24 md:px-12 lg:px-24"
+      className="relative px-8 py-24 md:px-16 lg:px-32"
     >
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto max-w-5xl">
         {/* Section Header — slide-up reveal */}
         <div ref={headerRef} className="mb-16 overflow-hidden">
           <motion.div

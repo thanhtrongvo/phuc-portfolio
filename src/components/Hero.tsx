@@ -158,7 +158,7 @@ export default function Hero() {
     <section
       ref={sectionRef}
       id="hero"
-      className="relative min-h-screen overflow-hidden px-6 pb-8 pt-28 md:px-12 lg:px-24"
+      className="relative min-h-screen overflow-hidden px-8 pb-8 pt-28 md:px-16 lg:px-32"
     >
       {/* Background floating shapes */}
       <motion.div
@@ -185,7 +185,7 @@ export default function Hero() {
         }}
       />
 
-      <div className="mx-auto flex max-w-7xl flex-col gap-12 lg:flex-row lg:items-center lg:gap-16">
+      <div className="mx-auto flex max-w-5xl flex-col gap-12 lg:flex-row lg:items-center lg:gap-16">
         {/* Left Content — with parallax */}
         <motion.div className="flex-1" style={{ y: textY }}>
           {/* Availability Badge — with pulse glow */}

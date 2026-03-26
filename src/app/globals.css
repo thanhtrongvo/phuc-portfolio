@@ -228,3 +228,46 @@ select,
   transform-origin: left;
   animation: line-expand 0.8s ease-out forwards;
 }
+
+/* ── Section Divider Lines ─────────────────────────── */
+.section-divider {
+  position: relative;
+  height: 1px;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1200px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(26, 26, 26, 0.15) 20%,
+    rgba(26, 26, 26, 0.15) 80%,
+    transparent 100%
+  );
+}
+
+.section-divider::before,
+.section-divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid rgba(26, 26, 26, 0.2);
+  background: var(--color-background);
+}
+
+.section-divider::before {
+  left: 0;
+}
+
+.section-divider::after {
+  right: 0;
+}
+
+/* ── Content Container - Narrower for grid lines ──── */
+.content-narrow {
+  max-width: 70%;
+  margin: 0 auto;
+}
