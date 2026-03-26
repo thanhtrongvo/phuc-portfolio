@@ -44,16 +44,7 @@ export default function Footer() {
           className="mb-16"
         >
           <h2 className="font-sans text-5xl font-semibold leading-[1.1] tracking-tight text-white md:text-7xl lg:text-8xl">
-            Lets {/* Rotating Word */}
-            <span className="relative inline-block h-[1.1em] overflow-hidden align-bottom">
-              <span className="animate-rotate-words flex flex-col text-white/40">
-                <span className="block h-[1.1em]">create</span>
-                <span className="block h-[1.1em]">visualize</span>
-                <span className="block h-[1.1em]">build</span>
-                <span className="block h-[1.1em]">design</span>
-                <span className="block h-[1.1em]">create</span>
-              </span>
-            </span>
+            Let’s create, visualize, build, design
             <br />
             incredible work together.
           </h2>
