@@ -58,21 +58,16 @@ export const projects: Project[] = [
 
 export const skills = {
   tools: [
-    "Adobe Premiere Pro",
-    "Adobe After Effects",
-    "DaVinci Resolve",
-    "Final Cut Pro",
-    "CapCut Pro",
-    "Cinema 4D",
-    "Blender",
+    { name: "CapCut Pro", icon: "capcut" },
+    { name: "Canva", icon: "canva" },
+    { name: "Adobe Premiere Pro", icon: "premiere" },
+    { name: "Adobe After Effects", icon: "aftereffects" },
   ],
   services: [
-    "Video Editing & Storytelling",
-    "Motion Graphics & Animation",
-    "Color Grading & Lookbuilding",
-    "Sound Design & Audio Mixing",
-    "Social Media Content & Reels",
-    "Visual Effects (VFX)",
+    "Video Editing",
+    "Basic Motion Design",
+    "Sound Design",
+    "Scriptwriting for Storytelling",
   ],
 };
 
