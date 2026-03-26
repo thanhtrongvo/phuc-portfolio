@@ -74,45 +74,33 @@ export const skills = {
 export const faqItems = [
   {
     id: "01",
-    question: "What types of projects do you specialize in?",
+    question: "What projects do you specialize in?",
     answer:
-      "I focus primarily on cinematic video production, motion graphics, and short-form content. My work ranges from high-end brand campaigns to social reels and YouTube videos.",
+      "I focus on visual journalism and documentary-style storytelling. I specialize in taking complex topics—like finance, history, or film—and transforming them into high-retention, cinematic videos for YouTube and social media.",
   },
   {
     id: "02",
-    question: "How involved are you in the creative process?",
+    question: "Can you edit in other styles?",
     answer:
-      "Fully hands-on — from initial concept and shot planning, through direction and shooting, all the way to the final edit, color grading, and sound design.",
+      "Absolutely. While I love the cinematic look, I am built on adaptability. I study the pacing of your favorite creators to ensure the final edit is a perfect harmony of your voice and my technical vision. Whether it's high-energy cuts or a minimalist aesthetic, I pivot quickly to match your needs.",
   },
   {
     id: "03",
-    question: "Do you take on smaller projects, or only large campaigns?",
+    question: "How involved are you in the creative process?",
     answer:
-      "I'm selective but open to all projects that align creatively. Whether it's a large-scale campaign or a short-form social shoot, if the vision resonates, I'm in.",
+      "Completely. I am a research-first creator. I don't just edit footage; I help with planning, script interpretation, and finding the right 'pulse' for the audio. I'm here to be a creative partner, not just a pair of hands.",
   },
   {
     id: "04",
-    question: "How long does a typical project take?",
+    question: "Can you match my existing brand aesthetic?",
     answer:
-      "Most projects run between 2 to 6 weeks from ideation to delivery, depending on the scope, complexity, and editing requirements. Quick-turnaround projects can also be discussed if timelines align.",
+      "Yes. While I have my own style, my goal is to serve the script. I adapt my editing rhythm and designs to fit your existing brand voice while elevating the overall production value.",
   },
   {
     id: "05",
-    question: "Do you handle everything yourself, or do you have a team?",
+    question: "Do you work alone or with a team?",
     answer:
-      "I lead every project personally, from direction and shooting to the final edit. But for larger or specialized projects, I bring in a carefully selected, small team of trusted collaborators tailored specifically to your needs.",
-  },
-  {
-    id: "06",
-    question: "Can you match my existing brand aesthetic?",
-    answer:
-      "Absolutely. I pride myself on adaptability — whether it's matching an existing visual style or helping define a fresh creative direction for your brand.",
-  },
-  {
-    id: "07",
-    question: "How do you structure pricing and payments?",
-    answer:
-      "Pricing is project-based and reflects the complexity, deliverables, and usage rights. After discussing your project needs, I'll provide a clear quote upfront. Typically, payments are structured as a 50% deposit, with the balance due upon final delivery.",
+      "I am an independent creator. This means you get my full attention on every project. I personally handle the research, planning, and sound design to ensure the vision stays consistent from start to finish.",
   },
 ];
 
