@@ -204,13 +204,13 @@ export default function Hero() {
           {/* Main Heading — character-by-character reveal */}
           <h1 className="font-sans text-[clamp(3rem,8vw,6.5rem)] font-light leading-[0.95] tracking-tight">
             <AnimatedText
-              text="Modern"
+              text="Documentary"
               className="text-foreground/30"
               delay={0.5}
             />
             <br />
             <AnimatedText
-              text="renaissance"
+              text="storyteller."
               className="font-semibold text-foreground"
               delay={0.75}
             />
@@ -228,7 +228,7 @@ export default function Hero() {
             }}
             className="mt-10 text-sm font-bold tracking-wide text-foreground uppercase"
           >
-            PERHAPS TODAY ✨
+            OBSESSED WITH THE "WHY" ✨
           </motion.p>
 
           {/* Description — wipe in */}
@@ -239,12 +239,11 @@ export default function Hero() {
             className="mt-4 max-w-md"
           >
             <p className="text-base leading-relaxed text-foreground/70">
-              hello, I&apos;m <strong className="text-foreground">Phuc</strong>{" "}
-              — a content creator & visual storyteller based out of{" "}
-              <strong className="text-foreground">Vietnam</strong>.
+              Hello, I&apos;m <strong className="text-foreground">Smith</strong>. I&apos;m a video editor obsessed with the world of visual journalism. From the provinces of{" "}
+              <strong className="text-foreground">Vietnam</strong> to global financial trends, I find the story.
             </p>
             <p className="mt-3 text-base leading-relaxed text-foreground/70">
-              I execute photo, video, and design projects.
+              I map out the vision, find the pulse, and execute the edit.
             </p>
           </motion.div>
 
