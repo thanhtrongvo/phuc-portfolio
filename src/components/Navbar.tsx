@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 const navItems = [
   { label: "Work", href: "#work" },
@@ -54,9 +55,14 @@ export default function Navbar() {
             className="group flex items-center gap-2.5 rounded-full px-3 py-1.5"
           >
             <div className="relative flex h-8 w-8 items-center justify-center overflow-hidden rounded-full bg-foreground text-xs font-bold text-background transition-transform duration-300 group-hover:scale-110">
-              {/* Shine sweep on hover */}
-              <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-500 group-hover:translate-x-full" />
-              <span className="relative z-10">P</span>
+              <Image
+                src="/smallimg.jpg"
+                alt="Logo"
+                fill
+                sizes="32px"
+                className="object-cover"
+                priority
+              />
             </div>
             <span className="hidden font-sans text-sm font-semibold text-foreground transition-colors duration-300 group-hover:text-foreground/70 md:block">
               phuc
