@@ -116,11 +116,12 @@ export default function About() {
                 className="h-full w-full"
               >
                 <Image
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80"
-                  alt="Phuc — photographer and filmmaker"
+                  src="/avatar.jpg"
+                  alt="Portrait"
                   fill
                   sizes="(max-width: 1024px) 100vw, 40vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  priority
                 />
               </motion.div>
               {/* Hover overlay */}
