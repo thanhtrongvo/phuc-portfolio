@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { faqItems } from "@/lib/data";
 
@@ -62,6 +62,8 @@ function FAQItem({
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [emailBody, setEmailBody] = useState("");
+  const [emailSubject, setEmailSubject] = useState("Follow-up question");
 
   return (
     <section id="faq" className="relative px-8 py-24 md:px-16 lg:px-32">
@@ -94,38 +96,88 @@ export default function FAQ() {
           ))}
         </div>
 
-        {/* Follow-up CTA */}
+        {/* Follow-up CTA with email composer */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="mt-12 rounded-2xl border border-border bg-card p-8 text-center"
+          className="mt-12 rounded-2xl border border-border bg-card p-8"
         >
-          <p className="text-base text-foreground/70">
+          <p className="text-base text-foreground/70 text-center">
             Have a follow-up question?
           </p>
-          <a
-            href="mailto:trongphucwork123@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-3 inline-flex items-center gap-2 text-base font-semibold text-foreground transition-colors hover:text-foreground/70"
+
+          <form
+            className="mt-6 flex flex-col gap-4"
+            onSubmit={(e: FormEvent<HTMLFormElement>) => {
+              e.preventDefault();
+              const to = "trongphucwork123@gmail.com";
+              const subject = encodeURIComponent(emailSubject.trim() || "Follow-up question");
+              const body = encodeURIComponent(emailBody.trim());
+              const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${to}&su=${subject}&body=${body}`;
+              window.open(gmailUrl, "_blank", "noopener,noreferrer");
+            }}
           >
-            Send me an email!
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <line x1="7" y1="17" x2="17" y2="7" />
-              <polyline points="7 7 17 7 17 17" />
-            </svg>
-          </a>
+            <div className="grid gap-3 md:grid-cols-[1fr]">
+              <div className="flex flex-col gap-2">
+                <label className="text-sm font-medium text-foreground/80" htmlFor="email-subject">
+                  Subject
+                </label>
+                <input
+                  id="email-subject"
+                  type="text"
+                  value={emailSubject}
+                  onChange={(e) => setEmailSubject(e.target.value)}
+                  className="w-full rounded-lg border border-border bg-background/60 px-3 py-2 text-sm text-foreground outline-none transition-shadow focus:border-foreground focus:shadow-[0_0_0_2px_rgba(0,0,0,0.08)]"
+                  placeholder="Follow-up question"
+                />
+              </div>
+              <div className="flex flex-col gap-2">
+                <label className="text-sm font-medium text-foreground/80" htmlFor="email-body">
+                  Message
+                </label>
+                <textarea
+                  id="email-body"
+                  value={emailBody}
+                  onChange={(e) => setEmailBody(e.target.value)}
+                  className="min-h-[140px] w-full rounded-lg border border-border bg-background/60 px-3 py-2 text-sm text-foreground outline-none transition-shadow focus:border-foreground focus:shadow-[0_0_0_2px_rgba(0,0,0,0.08)]"
+                  placeholder="Tell me what you need help with…"
+                />
+              </div>
+            </div>
+
+            <div className="mt-2 flex flex-wrap items-center justify-center gap-3">
+              <button
+                type="submit"
+                className="inline-flex items-center gap-2 rounded-full bg-foreground px-4 py-2 text-sm font-semibold text-background transition-colors hover:bg-foreground/90"
+              >
+                Open Gmail compose
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <line x1="7" y1="17" x2="17" y2="7" />
+                  <polyline points="7 7 17 7 17 17" />
+                </svg>
+              </button>
+
+              <a
+                href="mailto:trongphucwork123@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm font-semibold text-foreground transition-colors hover:text-foreground/70"
+              >
+                Use mail app
+              </a>
+            </div>
+          </form>
         </motion.div>
       </div>
     </section>
