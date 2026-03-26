@@ -106,7 +106,7 @@ export default function FAQ() {
             Have a follow-up question?
           </p>
           <a
-            href="mailto:hello@phuc.studio"
+            href="mailto:trongphucwork123@gmail.com"
             className="mt-3 inline-flex items-center gap-2 text-base font-semibold text-foreground transition-colors hover:text-foreground/70"
           >
             Send me an email!
