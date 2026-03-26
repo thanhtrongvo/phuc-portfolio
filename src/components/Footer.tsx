@@ -108,12 +108,6 @@ export default function Footer() {
         >
           <div className="flex flex-wrap items-center gap-4">
             <span>Based in Vietnam</span>
-            <a href="#" className="transition-colors hover:text-white/60">
-              Terms of service
-            </a>
-            <a href="#" className="transition-colors hover:text-white/60">
-              Privacy Policy
-            </a>
           </div>
           <span>© {new Date().getFullYear()} Phuc</span>
         </motion.div>
