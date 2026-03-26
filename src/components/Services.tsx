@@ -11,10 +11,13 @@ import {
 } from "react-icons/tb";
 import { SiCanva } from "react-icons/si";
 
-/* ── Custom CapCut Icon (not available in react-icons) ─────── */
+/* ── Custom CapCut Icon (scissors/cut style - recognizable app icon) ─────── */
 const CapCutIcon = ({ className }: { className?: string }) => (
   <svg viewBox="0 0 24 24" className={className} fill="currentColor">
-    <path d="M12.004 0c-1.327.004-2.598.207-3.78.569l5.62 3.246c2.938 1.697 4.077 5.461 2.542 8.404-.053.102-.108.203-.167.302l5.608 3.238a11.367 11.367 0 0 0 2.17-6.617V9.14c0-2.502-.81-4.822-2.182-6.703a.512.512 0 0 0-.7-.133l-2.627 1.518A11.342 11.342 0 0 0 12.004 0zm-8.17 3.427a.512.512 0 0 0-.255.07A11.334 11.334 0 0 0 .687 9.14v.002c0 2.502.81 4.822 2.182 6.703.174.239.515.29.7.133l2.627-1.518a11.34 11.34 0 0 0 6.484 3.824l-5.62-3.246c-2.938-1.697-4.077-5.461-2.542-8.404.053-.102.108-.203.167-.302L-.923 3.094a.512.512 0 0 0-.243-.067zM12 6.857a5.143 5.143 0 1 0 0 10.286 5.143 5.143 0 0 0 0-10.286zm-.004 13.426a11.34 11.34 0 0 0-6.478-3.822l5.616 3.244c.923.533 1.945.823 2.972.867l.003.001c1.027.044 2.068-.156 3.035-.593l.006-.003c.3-.135.59-.295.866-.478l-2.628-1.517a5.655 5.655 0 0 1-3.392 2.301z"/>
+    <path d="M9.64 14.36a3.5 3.5 0 1 1-4.95-4.95 3.5 3.5 0 0 1 4.95 4.95zm4.72-4.72a3.5 3.5 0 1 1 4.95 4.95 3.5 3.5 0 0 1-4.95-4.95zM12 12l-6.36 6.36M12 12l6.36-6.36" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+    <circle cx="7" cy="17" r="3" fill="none" stroke="currentColor" strokeWidth="2"/>
+    <circle cx="17" cy="7" r="3" fill="none" stroke="currentColor" strokeWidth="2"/>
+    <line x1="7" y1="17" x2="17" y2="7" stroke="currentColor" strokeWidth="2"/>
   </svg>
 );
 
