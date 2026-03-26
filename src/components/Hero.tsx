@@ -202,7 +202,7 @@ export default function Hero() {
           </motion.div>
 
           {/* Main Heading — character-by-character reveal */}
-          <h1 className="font-sans text-[clamp(3rem,8vw,6.5rem)] font-light leading-[0.95] tracking-tight">
+          <h1 className="font-sans text-[clamp(2.5rem,6vw,5rem)] font-light leading-[0.95] tracking-tight">
             <AnimatedText
               text="Documentary"
               className="text-foreground/30"
