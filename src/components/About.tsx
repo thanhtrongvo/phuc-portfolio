@@ -79,7 +79,7 @@ export default function About() {
             }}
           >
             <h2 className="font-sans text-4xl font-semibold leading-tight tracking-tight md:text-5xl">
-              A modern renaissance approach
+              A research-first approach
               <br />
               <span className="text-foreground/30">
                 to visual storytelling.
@@ -162,13 +162,13 @@ export default function About() {
           <div className="flex flex-col gap-6 lg:col-span-3">
             <p className="text-lg leading-relaxed text-foreground/80 md:text-xl">
               <RevealText
-                text="I picked up a camera over a decade ago — and never looked back. What started with film stills for the feeling grew into cinematic videos, campaigns, and branded storytelling. I move between photography, filmmaking, and creative direction—always chasing the best way to tell each story."
+                text="I start with a plan — and never look back. What began with a curiosity for how things work grew into a passion for cinematic journalism. I move between deep research, sound design, and video editing—always chasing the best way to interpret a script on the screen."
                 delay={0.1}
               />
             </p>
             <p className="text-lg leading-relaxed text-foreground/80 md:text-xl">
               <RevealText
-                text="Being a modern renaissance creator means pushing creative boundaries. From cinematic portraits to punchy reels and full campaigns, I aim to build work that feels distinct—something that breaks the scroll and makes you pause."
+                text="Being a visual storyteller means more than just cutting clips. From complex data sets to cinematic documentaries, I aim to build work that feels intentional—something that hooks the viewer and explains the 'why' behind the story."
                 delay={0.3}
               />
             </p>
@@ -197,7 +197,7 @@ export default function About() {
               </motion.span>
               <p className="relative font-serif text-xl leading-relaxed text-foreground italic md:text-2xl">
                 <RevealText
-                  text="Details matter because they carry intention. Every frame, every edit, every beat has to serve the story. If it doesn't, it doesn't stay."
+                  text="Details matter because they carry the vision. Every cut, every beat, and every sound choice has to serve the story. If it doesn't match the rhythm of the script, it doesn't stay."
                   delay={0.4}
                 />
               </p>
